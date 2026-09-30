@@ -12,3 +12,12 @@
 - Uji coba Laragon MySQL berjalan pada Port 3306.
 - Konfigurasi identitas Git global.
 
+### Spesifikasi Perangkat
+
+- **Perangkat / Model:** ASUS TUF Gaming A15
+- **Sistem Operasi:** Windows 11 Home 64-bit
+- **Prosesor:** AMD Ryzen™ 7 / AMD Ryzen™ 5
+- **Kapasitas RAM:** 16 GB DDR5 / DDR4
+- **Penyimpanan:** 512 GB / 1 TB NVMe SSD
+- **Versi Node.js:** v20.x.x (atau cek dengan perintah `node -v` di terminal)
+- **Versi Git:** 2.x.x (atau cek dengan perintah `git --version` di terminal)
