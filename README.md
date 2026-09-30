@@ -12,6 +12,9 @@
 - Uji coba Laragon MySQL berjalan pada Port 3306.
 - Konfigurasi identitas Git global.
 
+- **Versi Node.js:** Belum terinstal (atau versi LTS v20.x.x)
+- **Versi Git:** 2.56.0
+
 ### Spesifikasi Perangkat
 
 - **Perangkat / Model:** ASUS TUF Gaming A15
