@@ -1,31 +1,43 @@
 ```css
-/* Reset */
+/* =========================
+   1. RESET
+========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* =========================
+   2. BODY
+========================= */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
+    font-family: "Times New Roman", serif;
+    background-color: #93c0e0;
+    color: #303b45;
+    line-height: 1.7;
 }
 
-/* Header */
+/* =========================
+   3. HEADER
+========================= */
 body > header {
-    background-color: white;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
+    background-color: #f5f7f9;
+    padding: 30px 20px;
+    border-bottom: 1px solid #d6e2eb;
+    box-shadow: 0 3px 10px rgba(30, 60, 80, 0.08);
 }
 
 body > header h1 {
     max-width: 900px;
-    margin: auto;
+    margin: 0 auto 20px;
+    color: #244b68;
+    font-size: 32px;
 }
 
-/* Navigation */
+/* =========================
+   4. NAVIGATION
+========================= */
 nav {
     max-width: 900px;
     margin: auto;
@@ -33,145 +45,556 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
     list-style: none;
 }
 
 nav a {
-    color: #333;
+    display: inline-block;
+    padding: 8px 16px;
+    color: #244b68;
     text-decoration: none;
+    border-radius: 7px;
+    transition: 0.25s ease;
 }
 
 nav a:hover {
-    color: #0d6efd;
+    background-color: #dceaf4;
+    color: #17364d;
 }
 
-/* Main */
+/* =========================
+   5. MAIN
+========================= */
 main {
-    max-width: 900px;
-    margin: 30px auto;
+    max-width: 950px;
+    margin: 35px auto;
     padding: 0 20px;
 }
 
+/* =========================
+   6. SECTION
+========================= */
 section {
-    background-color: white;
-    padding: 25px;
+    background-color: #f5f7f9;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 5px 16px rgba(36, 75, 104, 0.08);
 }
 
-/* Gambar */
+h2 {
+    color: #244b68;
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: #315d7b;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* =========================
+   7. GAMBAR
+========================= */
 main img {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 0;
+    margin: 15px 0;
+    border-radius: 9px;
 }
 
-/* Judul */
-h2 {
-    margin-bottom: 15px;
-}
-
-h3 {
-    margin-bottom: 5px;
-}
-
-/* Project */
+/* =========================
+   8. PROYEK
+========================= */
 #project {
-    margin-top: 30px;
+    background-color: #f5f7f9;
 }
 
-article {
-    padding: 15px 0;
-    border-bottom: 1px solid #ddd;
+#project > h2 {
+    padding-bottom: 12px;
+    border-bottom: 3px solid #93c0e0;
+    margin-bottom: 25px;
 }
 
-article:last-child {
-    border-bottom: none;
+#project article {
+    background-color: #ffffff;
+    padding: 22px;
+    margin-bottom: 18px;
+    border: 1px solid #d9e5ed;
+    border-left: 5px solid #527f9d;
+    border-radius: 9px;
+    box-shadow: 0 3px 9px rgba(36, 75, 104, 0.05);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
 }
 
-/* Form */
-form {
-    margin-top: 20px;
+#project article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 16px rgba(36, 75, 104, 0.13);
+}
+
+#project article h3 {
+    color: #244b68;
+}
+
+#project article p {
+    margin-bottom: 9px;
+}
+
+#project article:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================
+   9. HUBUNGI SAYA
+========================= */
+#kontak {
+    background: linear-gradient(135deg, #f5f7f9, #e6f0f7);
+}
+
+#kontak > h2 {
+    padding-bottom: 12px;
+    border-bottom: 3px solid #93c0e0;
+    margin-bottom: 22px;
+}
+
+#kontak p {
+    margin-bottom: 14px;
+}
+
+/* Form kontak */
+#kontak form {
+    margin-top: 22px;
+    padding: 22px;
+    background-color: #ffffff;
+    border: 1px solid #d9e5ed;
+    border-radius: 10px;
 }
 
 form p {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 label {
-    display: inline-block;
-    margin-bottom: 5px;
+    display: block;
+    margin-bottom: 7px;
+    color: #244b68;
+    font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
 select,
 textarea {
+    display: block;
     width: 100%;
-    padding: 9px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    border: 1px solid #c6d5e0;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #303b45;
     font-family: Arial, sans-serif;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #527f9d;
+    box-shadow: 0 0 0 3px rgba(82, 127, 157, 0.15);
 }
 
 textarea {
+    min-height: 110px;
     resize: vertical;
 }
 
+/* =========================
+   10. TOMBOL
+========================= */
 button {
-    padding: 9px 15px;
+    padding: 11px 20px;
     border: none;
-    background-color: #333;
+    border-radius: 6px;
+    background-color: #315d7b;
     color: white;
+    font-family: Arial, sans-serif;
     cursor: pointer;
-}
-
-button[type="reset"] {
-    background-color: #888;
+    transition: background-color 0.2s, transform 0.2s;
 }
 
 button:hover {
-    opacity: 0.8;
+    background-color: #244b68;
+    transform: translateY(-1px);
 }
 
-/* Aside */
+button[type="reset"] {
+    background-color: #7d8991;
+}
+
+button[type="reset"]:hover {
+    background-color: #626e76;
+}
+
+/* =========================
+   11. ASIDE
+========================= */
 aside {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: white;
-    border-left: 3px solid #0d6efd;
+    max-width: 910px;
+    margin: 25px auto;
+    padding: 22px;
+    background-color: #f5f7f9;
+    border-left: 5px solid #527f9d;
+    border-radius: 9px;
+    box-shadow: 0 3px 10px rgba(36, 75, 104, 0.08);
 }
 
-/* Footer */
+/* =========================
+   12. FOOTER
+========================= */
 footer {
-    padding: 20px;
+    padding: 25px 20px;
     text-align: center;
-    color: #777;
+    color: #244b68;
     font-size: 14px;
 }
 
-/* Garis */
+/* =========================
+   13. GARIS
+========================= */
 hr {
     display: none;
 }
 
-/* Tampilan HP */
+/* =========================
+   14. TAMPILAN HP
+========================= */
 @media (max-width: 700px) {
+    body > header {
+        padding: 22px 18px;
+    }
+
+    body > header h1 {
+        font-size: 26px;
+    }
+
     nav ul {
-        flex-direction: column;
-        gap: 8px;
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 7px 10px;
     }
 
     main {
-        margin-top: 20px;
-    }
-
-    main img {
-        margin: 0 auto;
+        margin: 22px auto;
+        padding: 0 14px;
     }
 
     section {
         padding: 20px;
+        margin-bottom: 18px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+    #project article {
+        padding: 17px;
+    }
+
+    #kontak form {
+        padding: 16px;
+    }
+
+    aside {
+        margin: 20px 14px;
+    }
+}
+
+```css
+/* ===== TAMPILAN HALAMAN ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f0f7;
+    color: #2c3e50;
+    line-height: 1.7;
+}
+
+/* Judul utama */
+body > header {
+    background: linear-gradient(135deg, #315d7b, #6094b5);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+body > header h1 {
+    color: white;
+    font-size: 32px;
+}
+
+/* Konten utama */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Kartu setiap bagian */
+section {
+    background-color: white;
+    padding: 28px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    border: 1px solid #dbe6ee;
+    box-shadow: 0 4px 14px rgba(45, 78, 100, 0.08);
+}
+
+/* Judul bagian */
+section h2,
+section h3 {
+    color: #315d7b;
+    margin-bottom: 14px;
+}
+
+/* Paragraf */
+section p {
+    margin-bottom: 12px;
+}
+
+/* Daftar proyek */
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    background-color: #f0f6fa;
+    margin: 10px 0;
+    padding: 14px 18px;
+    border-left: 4px solid #6094b5;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+section ul li:hover {
+    background-color: #dcebf5;
+    transform: translateX(4px);
+}
+
+/* Bagian kontak */
+#kontak {
+    background: linear-gradient(135deg, #ffffff, #edf5fa);
+    border-top: 4px solid #6094b5;
+}
+
+#kontak p {
+    padding: 10px 14px;
+    background-color: #f0f6fa;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #526b7c;
+    border-top: 1px solid #cbdce7;
+    margin-top: 30px;
+}
+
+/* Tampilan HP */
+@media (max-width: 700px) {
+    body > header {
+        margin: 10px;
+        padding: 22px;
+    }
+
+    body > header h1 {
+        font-size: 25px;
+    }
+
+    main {
+        padding: 0 12px;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+/* Mengecilkan kolom Resume */
+#resume {
+    padding: 15px 25px;
+    min-height: auto;
+}
+
+#resume h2 {
+    margin-bottom: 15px;
+}
+
+#resume p {
+    margin-bottom: 8px;
+}
+```css
+/* =========================
+   PROYEK
+========================= */
+#project {
+    background-color: #f5f8fb;
+    padding: 30px;
+    border-radius: 14px;
+    border-top: 5px solid #315d7b;
+    box-shadow: 0 5px 15px rgba(36, 75, 104, 0.12);
+}
+
+#project h2 {
+    color: #244b68;
+    font-size: 27px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #c5ddeb;
+    margin-bottom: 25px;
+}
+
+#project article {
+    background-color: white;
+    padding: 22px;
+    margin-bottom: 18px;
+    border: 1px solid #d6e5ef;
+    border-left: 5px solid #6094b5;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(36, 75, 104, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#project article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 16px rgba(36, 75, 104, 0.14);
+}
+
+#project article h3 {
+    color: #315d7b;
+    margin-bottom: 12px;
+}
+
+#project article p {
+    margin-bottom: 10px;
+}
+
+#project article:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================
+   HUBUNGI SAYA
+========================= */
+#kontak {
+    background: linear-gradient(135deg, #f8fbfd, #e4f0f8);
+    padding: 30px;
+    border-radius: 14px;
+    border-top: 5px solid #6094b5;
+    box-shadow: 0 5px 15px rgba(36, 75, 104, 0.12);
+}
+
+#kontak h2 {
+    color: #244b68;
+    font-size: 27px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #c5ddeb;
+    margin-bottom: 22px;
+}
+
+/* Informasi kontak */
+#kontak > p {
+    background-color: white;
+    padding: 13px 16px;
+    margin-bottom: 12px;
+    border: 1px solid #d6e5ef;
+    border-left: 4px solid #6094b5;
+    border-radius: 7px;
+}
+
+/* Form kontak */
+#kontak form {
+    background-color: white;
+    padding: 24px;
+    margin-top: 22px;
+    border: 1px solid #d6e5ef;
+    border-radius: 10px;
+}
+
+#kontak label {
+    display: block;
+    color: #315d7b;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+#kontak input,
+#kontak textarea,
+#kontak select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c5d5e1;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+    background-color: #fbfdff;
+}
+
+#kontak input:focus,
+#kontak textarea:focus,
+#kontak select:focus {
+    outline: none;
+    border-color: #6094b5;
+    box-shadow: 0 0 0 3px rgba(96, 148, 181, 0.15);
+}
+
+#kontak button {
+    padding: 11px 20px;
+    background-color: #315d7b;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#kontak button:hover {
+    background-color: #24445c;
+}
+
+/* Tampilan HP */
+@media (max-width: 700px) {
+    #project,
+    #kontak {
+        padding: 20px;
+    }
+
+    #project article {
+        padding: 17px;
+    }
+
+    #kontak form {
+        padding: 17px;
     }
 }
 ```

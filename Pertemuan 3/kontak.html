@@ -5,63 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modul 2 - Form Kontak</title>
-    <link rel="stylesheet" href="style.css>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
- <header>
-     <h1>Formulir Kontak</h1>
- </header>
+    <header>
+        <h1>Formulir Kontak</h1>
+        <p>Silakan isi formulir di bawah ini untuk menghubungi saya.</p>
+    </header>
 
- <hr>
+    <main>
+        <section id="kontak">
+            <h2>Kirim Pesan atau Penawaran Proyek</h2>
+            <p class="deskripsi-kontak">
+                Punya pertanyaan atau ingin bekerja sama? Isi formulir berikut.
+            </p>
 
- <main>
-     <section>
-         <h2>Kirimkan Pesan atau Penawaran Proyek</h2>
-         <form>
+            <form>
+                <p>
+                    <label for="nama_pengirim">Nama Lengkap:</label>
+                    <input type="text" id="nama_pengirim"
+                           name="nama_pengirim"
+                           placeholder="Masukkan nama lengkap"
+                           required>
+                </p>
 
-     <p>
+                <p>
+                    <label for="email_pengirim">Alamat Email:</label>
+                    <input type="email" id="email_pengirim"
+                           name="email_pengirim"
+                           placeholder="nama@email.com"
+                           required>
+                </p>
 
-        <label for="nama_pengirim">Nama Lengkap
-Anda:</label><br>
-        <input type="text" id="nama_pengirim"
-name="nama_pengirim">
- </p>
+                <p>
+                    <label for="jenis_layanan">Layanan yang Dibutuhkan:</label>
+                    <select id="jenis_layanan" name="jenis_layanan" required>
+                        <option value="">-- Pilih Layanan --</option>
+                        <option value="web">Pembuatan Website</option>
+                        <option value="app">Pengembangan Aplikasi</option>
+                        <option value="other">Lain-lain</option>
+                    </select>
+                </p>
 
- <p>
-        <label for="email_pengirim">Alamat
-Email:</label><br>
-        <input type="email" id="email_pengirim"
-name="email_pengirim">
- </p>
+                <p>
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" rows="6"
+                              placeholder="Tuliskan pesan kamu..."
+                              required></textarea>
+                </p>
 
- <p>
-     <label for="jenis_layanan">Layanan yang
-Dibutuhkan:</label><br>
- <select id="jenis_layanan" name="jenis_layanan">
- <option value="">-- Pilih Layanan --</option>
-            <option value="web">Pembuatan Web</option>
-            <option value="app">Pengembangan
-Aplikasi</option>
-            <option value="other">Lain-lain</option>
-         </select>
-     </p>
-     <p>
-        <label for="pesan">Pesan:</label><br>
-        <textarea id="pesan" name="pesan" rows="6"
-cols="50"></textarea>
-</p>
-
-<p>
-    <button type="submit">Kirim Pesan</button>
-    <button type="reset">Batal / Reset</button>
-</p>
-
-        </form>
-     </section>
-</main>
-
-    <hr>
+                <div class="tombol-kontak">
+                    <button type="submit">Kirim Pesan</button>
+                    <button type="reset">Reset Formulir</button>
+                </div>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2026 Teknik Informatika ITG</p>
@@ -69,3 +70,4 @@ cols="50"></textarea>
 
 </body>
 </html>
+```

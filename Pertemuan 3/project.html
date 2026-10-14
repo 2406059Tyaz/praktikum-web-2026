@@ -1,38 +1,90 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Mahasiswa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: Arial; margin: 20px;">
+<body>
 
-    <h1>Mahasiswa Teknik Informatika</h1>
-    <hr>
+    <header class="header-proyek">
+        <h1>Proyek Saya</h1>
+        <p>Kumpulan proyek dan hasil pembelajaran saya</p>
+    </header>
 
-    <h3 id="profil">Tentang Saya</h3>
-    <p>
-        Saya adalah mahasiswa yang tertarik mempelajari
-        teknologi dan komputer.
-    </p>
+    <main class="halaman-proyek">
 
-    <h3 id="kuliah">Perkuliahan</h3>
-    <p>
-        Saya mempelajari pemrograman, basis data,
-        jaringan komputer, dan pengembangan website.
-    </p>
+        <section id="profil" class="kartu-proyek">
+            <h2>Tentang Saya</h2>
+            <p>
+                Saya adalah mahasiswa yang tertarik mempelajari
+                teknologi, komputer, dan pengembangan aplikasi.
+            </p>
+        </section>
 
-    <h3 id="projek">Proyek</h3>
-    <ul>
-        <li>Membuat website sederhana</li>
-        <li>Membuat program Python</li>
-        <li>Membuat sistem informasi</li>
-    </ul>
+        <section id="kuliah" class="kartu-proyek">
+            <h2>Perkuliahan</h2>
+            <p>
+                Saya mempelajari pemrograman, basis data,
+                jaringan komputer, dan pengembangan website.
+            </p>
+        </section>
 
-    <h3 id="kontak">Kontak</h3>
-    <p>Program Studi: Teknik Informatika</p>
+        <section id="projek" class="kartu-proyek">
+            <h2>Proyek Unggulan</h2>
 
-    <hr>
-    <p>&copy; 2026 Mahasiswa</p>
+            <article class="item-proyek">
+                <span class="nomor-proyek">01</span>
+                <div>
+                    <h3>Website Sederhana</h3>
+                    <p>
+                        Membuat halaman website menggunakan HTML
+                        dan CSS untuk menampilkan informasi.
+                    </p>
+                    <span class="tag-proyek">HTML</span>
+                    <span class="tag-proyek">CSS</span>
+                </div>
+            </article>
+
+            <article class="item-proyek">
+                <span class="nomor-proyek">02</span>
+                <div>
+                    <h3>Program Python</h3>
+                    <p>
+                        Membuat program sederhana untuk membantu
+                        menyelesaikan perhitungan dan pengolahan data.
+                    </p>
+                    <span class="tag-proyek">Python</span>
+                </div>
+            </article>
+
+            <article class="item-proyek">
+                <span class="nomor-proyek">03</span>
+                <div>
+                    <h3>Sistem Informasi</h3>
+                    <p>
+                        Merancang sistem untuk menyimpan,
+                        mengelola, dan menampilkan informasi.
+                    </p>
+                    <span class="tag-proyek">Database</span>
+                </div>
+            </article>
+        </section>
+
+        <section id="kontak" class="kartu-proyek">
+            <h2>Kontak</h2>
+            <p>Program Studi: Teknik Informatika</p>
+            <p>NIM: 2406059</p>
+            <p>Kampus: Institut Teknologi Garut</p>
+        </section>
+
+    </main>
+
+    <footer class="footer-proyek">
+        <p>&copy; 2026 Mahasiswa</p>
+    </footer>
 
 </body>
 </html>
