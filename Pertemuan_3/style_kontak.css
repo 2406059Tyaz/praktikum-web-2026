@@ -1,0 +1,84 @@
+
+/* Pengaturan halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    color: #333;
+}
+
+/* Bagian header */
+header {
+    background-color: #3498db;
+    color: rgb(243, 239, 239);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Menu navigasi */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Bagian formulir */
+main {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #a6d5f5;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Tombol */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #ddd;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Bagian footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}

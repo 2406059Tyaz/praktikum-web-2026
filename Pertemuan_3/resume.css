@@ -1,0 +1,70 @@
+
+/* Pengaturan halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2abab;
+    color: #d1cfcf;
+    margin: 0;
+}
+
+/* Header dan navigasi */
+header {
+    background-color: #70acd4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Konten resume */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #3498db;
+    border-bottom: 2px solid #bbe1fb;
+    padding-bottom: 5px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+section ul {
+    padding-left: 25px;
+}
+
+section li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
